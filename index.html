@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,
+        *:before,
+        *:after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-color: black;
+        }
+        nav {
+            height: 500px;
+            width: 70px;
+            min-width: 600px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin: auto;
+        }
+        a {
+            position: relative;
+            text-decoration: none;
+            font-family: 'poppins', sans-serif;
+            color: #fff;
+            font-size: 20px;
+            letter-spacing: 0.5px;
+           
+        }
+        a:after {
+            content: "";
+            position: absolute;
+            background-color: #fff;
+            height: 2px;
+            width: 0px;
+            left: 0;
+            bottom: 0px;
+            transition: 0.3s;
+        }
+        a:hover:after {
+            width: 75px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#UMESH">UMESH</a>
+        <a href="#SAMOD">SAMOD</a>
+        <a href="#SUNIL">SUNIL</a> 
+        <a href="#SAGAR">SAGAR</a> 
+     </nav>
+</body>
+</html>
